@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard – Gimnasio Fuerza Total</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+    *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth;}
+    body{font-family:'Poppins',sans-serif;background:#ffe6f0;color:#330033;line-height:1.7;}
+    img{max-width:100%;display:block;border-radius:12px;}
+    header{background:#5a0073;color:#fff;padding:3rem 2rem;display:flex;flex-wrap:wrap;gap:2rem;align-items:center;justify-content:space-between;}
+    header .brand{font-size:2.4rem;font-weight:800;}
+    header .tagline{font-size:1.2rem;max-width:450px;}
+    header span.highlight{color:#ff99cc;}
+    nav{background:#990099;padding:1rem;display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;}
+    nav a{color:#fff;text-decoration:none;font-weight:600;padding:.5rem 1.2rem;border-radius:6px;transition:background .3s;}
+    nav a:hover{background:rgba(255,255,255,.15);}
+    section{padding:3.5rem 1.5rem;max-width:1100px;margin:auto;}
+    h2.section-title{font-size:2rem;color:#cc0066;margin-bottom:1rem;position:relative;}
+    h2.section-title::after{content:'';position:absolute;bottom:-6px;left:0;width:60px;height:4px;background:#ff99cc;border-radius:2px;}
+    .grid{display:grid;gap:1.8rem;}
+    .grid-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+    .card{background:#fff;box-shadow:0 4px 10px rgba(0,0,0,.08);padding:1.5rem;border-radius:12px;}
+    table{width:100%;border-collapse:collapse;margin-top:1rem;background:#fff;box-shadow:0 4px 10px rgba(0,0,0,.05);}
+    th,td{padding:1rem;text-align:center;border:1px solid #e6cce6;}
+    th{background:#ffccf2;color:#330033;}
+    tr:nth-child(even){background:#fff6fa;}
+    footer{background:#5a0073;color:#eee;text-align:center;padding:2rem 1rem;margin-top:3rem;font-size:.9rem;}
+    @media(max-width:768px){header{flex-direction:column;text-align:center;}header .hero-img{order:-1;}}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 class="brand">Fuerza <span class="highlight">Total</span></h1>
+      <p class="tagline">Panel de control interno</p>
+    </div>
+    <div class="hero-img"><img src="assets/dashboard-hero.png" alt="Gráfico estadístico"></div>
+  </header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="vision.html">Visión y Misión</a>
+    <a href="planes.html">Planes</a>
+    <a href="formulario.html">Formulario</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+
+  <section>
+    <h2 class="section-title">Clientes Destacados</h2>
+    <div class="grid grid-2">
+      <figure class="card"><img src="RECURSOS/SENTADILLAS.jpg" alt="Cliente realizando sentadillas"><figcaption><strong>Ana Pérez</strong>  •  3 años con nosotros</figcaption></figure>
+      <figure class="card"><img src="RECURSOS/CORRER.jpg" alt="Cliente en clase de cycling"><figcaption><strong>Diana Salazar</strong>  •  2 años con nosotros</figcaption></figure>
+      <figure class="card"><img src="RECURSOS/PESAS.jpg" alt="Cliente levantando pesas"><figcaption><strong>Lucía Torres</strong>  •  4 años con nosotros</figcaption></figure>
+      <figure class="card"><img src="RECURSOS/JUMP.jpg" alt="Cliente haciendo box jump"><figcaption><strong>Carla Rivas</strong>  •  1.5 años con nosotros</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Cuotas a Pagar</h2>
+    <table>
+      <thead><tr><th>Socio</th><th>Plan</th><th>Monto (S/)</th><th>Vence</th></tr></thead>
+      <tbody>
+        <tr><td>Ana Pérez</td><td>PROGRESS</td><td>200</td><td>30/06/2025</td></tr>
+        <tr><td>Diego Salazar</td><td>ELITE</td><td>380</td><td>15/07/2025</td></tr>
+        <tr><td>Lucía Torres</td><td>STARTER</td><td>120</td><td>01/07/2025</td></tr>
+        <tr><td>Carlos Rivas</td><td>PROGRESS</td><td>200</td><td>28/06/2025</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2 class="section-title">Clases Programadas</h2>
+    <div class="grid grid-2">
+      <div class="card"><h3>Lunes</h3><ul><li>06:30 – HIIT</li><li>19:00 – Yoga Restaurativo</li></ul></div>
+      <div class="card"><h3>Martes</h3><ul><li>07:00 – Cycling</li><li>18:30 – Powerlifting</li></ul></div>
+      <div class="card"><h3>Miércoles</h3><ul><li>06:30 – Bootcamp</li><li>20:00 – Zumba</li></ul></div>
+      <div class="card"><h3>Jueves</h3><ul><li>07:00 – CrossFit</li><li>19:30 – Boxeo Funcional</li></ul></div>
+      <div class="card"><h3>Viernes</h3><ul><li>06:30 – Running Club</li><li>18:00 – Stretch & Mobility</li></ul></div>
+      <div class="card"><h3>Sábado</h3><ul><li>09:00 – Full Body Circuit</li><li>11:00 – Cycling Pro</li></ul></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>INTEGRANTES:<p>
+    <p>Palomino Barrios, Luz Mery</p> 
+    <p>Galvez Zuñiga, Sofia Nicoll</p>
+    <p>&copy; 2025 Gimnasio Fuerza Total</p>
+  </footer>
+</body>
+</html>

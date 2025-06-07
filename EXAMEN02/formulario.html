@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario – Gimnasio Fuerza Total</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+    *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth;}
+    body{font-family:'Poppins',sans-serif;background:#ffe6f0;color:#330033;line-height:1.7;}
+    img{max-width:100%;display:block;border-radius:12px;}
+    header{background:#5a0073;color:#fff;padding:3rem 2rem;display:flex;flex-wrap:wrap;gap:2rem;align-items:center;justify-content:space-between;}
+    header .brand{font-size:2.4rem;font-weight:800;}
+    header .tagline{font-size:1.2rem;max-width:450px;}
+    header span.highlight{color:#ff99cc;}
+    nav{background:#990099;padding:1rem;display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;}
+    nav a{color:#fff;text-decoration:none;font-weight:600;padding:.5rem 1.2rem;border-radius:6px;transition:background .3s;}
+    nav a:hover{background:rgba(255,255,255,.15);}
+    section{padding:3.5rem 1.5rem;max-width:1100px;margin:auto;}
+    h2.section-title{font-size:2rem;color:#cc0066;margin-bottom:1rem;position:relative;}
+    h2.section-title::after{content:'';position:absolute;bottom:-6px;left:0;width:60px;height:4px;background:#ff99cc;border-radius:2px;}
+    form{display:grid;gap:1rem;max-width:540px;}
+    input,textarea,select,button{padding:1rem;border:2px solid #cc66cc;border-radius:8px;font-family:'Poppins',sans-serif;}
+    button{background:#cc0066;color:#fff;font-weight:700;cursor:pointer;transition:opacity .3s;}
+    button:hover{opacity:.85;}
+    footer{background:#5a0073;color:#eee;text-align:center;padding:2rem 1rem;margin-top:3rem;font-size:.9rem;}
+    @media(max-width:768px){header{flex-direction:column;text-align:center;}header .hero-img{order:-1;}}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 class="brand">Fuerza <span class="highlight">Total</span></h1>
+      <p class="tagline">¡Conecta con nuestro equipo!</p>
+    </div>
+    <div class="hero-img"><img src="assets/form-hero.png" alt="Persona registrándose"></div>
+  </header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="vision.html">Visión y Misión</a>
+    <a href="planes.html">Planes</a>
+    <a href="formulario.html">Formulario</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+
+  <section>
+    <h2 class="section-title">Solicita Información</h2>
+    <p>Completa el formulario y uno de nuestros asesores se comunicará contigo en las próximas 24 horas para diseñar el plan perfecto a tu medida.</p>
+    <form action="#" method="post">
+      <label for="nom">Nombre completo</label>
+      <input type="text" id="nom" name="nombre" placeholder="Tu nombre" required>
+
+      <label for="cor">Correo electrónico</label>
+      <input type="email" id="cor" name="correo" placeholder="tucorreo@ejemplo.com" required>
+
+      <label for="tel">Teléfono</label>
+      <input type="tel" id="tel" name="telefono" placeholder="999-999-999">
+
+      <label for="plan">Plan de interés</label>
+      <select id="plan" name="plan">
+        <option>STARTER</option>
+        <option>PROGRESS</option>
+        <option>ELITE</option>
+      </select>
+
+      <label for="msg">Objetivos o comentarios</label>
+      <textarea id="msg" name="mensaje" rows="4" placeholder="Cuéntanos tus metas..."></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>INTEGRANTES:<p>
+    <p>Palomino Barrios, Luz Mery</p> 
+    <p>Galvez Zuñiga, Sofia Nicoll</p>
+    <p>&copy; 2025 Gimnasio Fuerza Total</p>
+  </footer>
+</body>
+</html>

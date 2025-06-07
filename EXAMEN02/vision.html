@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Visión y Misión – Gimnasio Fuerza Total</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+    *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth;}
+    body{font-family:'Poppins',sans-serif;background:#ffe6f0;color:#330033;line-height:1.7;}
+    img{max-width:100%;display:block;border-radius:12px;}
+    header{background:#5a0073;color:#fff;padding:3rem 2rem;display:flex;flex-wrap:wrap;gap:2rem;align-items:center;justify-content:space-between;}
+    header .brand{font-size:2.4rem;font-weight:800;}
+    header .tagline{font-size:1.2rem;max-width:450px;}
+    header span.highlight{color:#ff99cc;}
+    nav{background:#990099;padding:1rem;display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;}
+    nav a{color:#fff;text-decoration:none;font-weight:600;padding:.5rem 1.2rem;border-radius:6px;transition:background .3s;}
+    nav a:hover{background:rgba(255,255,255,.15);}
+    section{padding:3.5rem 1.5rem;max-width:1100px;margin:auto;}
+    h2.section-title{font-size:2rem;color:#cc0066;margin-bottom:1rem;position:relative;}
+    h2.section-title::after{content:'';position:absolute;bottom:-6px;left:0;width:60px;height:4px;background:#ff99cc;border-radius:2px;}
+    .grid{display:grid;gap:1.8rem;}
+    .grid-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+    .card{background:#fff;box-shadow:0 4px 10px rgba(0,0,0,.08);padding:1.5rem;border-radius:12px;}
+    footer{background:#5a0073;color:#eee;text-align:center;padding:2rem 1rem;margin-top:3rem;font-size:.9rem;}
+    @media(max-width:768px){header{flex-direction:column;text-align:center;}header .hero-img{order:-1;}}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 class="brand">Fuerza <span class="highlight">Total</span></h1>
+      <p class="tagline">Nuestro propósito y próximos horizontes.</p>
+    </div>
+    <div class="hero-img"><img src="assets/vision-hero.png" alt="Personas celebrando metas"></div>
+  </header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="vision.html">Visión y Misión</a>
+    <a href="planes.html">Planes</a>
+    <a href="formulario.html">Formulario</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+
+  <section>
+    <h2 class="section-title">Visión</h2>
+    <div class="grid grid-2">
+      <p>
+        Aspiramos a ser la cadena de gimnasios líder en Latinoamérica, reconocida por integrar lo último en ciencia del ejercicio, tecnología deportiva y experiencias personalizadas. Nos visualizamos expandiendo nuestras sedes a diez países, formando alianzas con universidades para investigación en salud y convirtiéndonos en un hub de bienestar integral.
+      </p>
+      <figure class="card"><img src="RECURSOS/MAPA.jpg" alt="Mapa con expansión"><figcaption>Metas de expansión regional</figcaption></figure>
+    </div>
+
+    <h2 class="section-title" style="margin-top:3rem;">Misión</h2>
+    <div class="grid grid-2">
+      <figure class="card"><img src="RECURSOS/MISION.jpg" alt="Entrenador motivando a socia"><figcaption>Coaching humano + tech</figcaption></figure>
+      <p>
+        Empoderamos a las personas para que desarrollen su máximo potencial físico y mental a través de programas inclusivos, progresivos y basados en evidencia. Ofrecemos entornos seguros, sostenibles y socialmente responsables que fomentan la disciplina, la camaradería y la auto-superación.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>INTEGRANTES:<p>
+    <p>Palomino Barrios, Luz Mery</p> 
+    <p>Galvez Zuñiga, Sofia Nicoll</p>
+    <p>&copy; 2025 Gimnasio Fuerza Total</p>
+  </footer>
+</body>
+</html>

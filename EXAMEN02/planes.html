@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Planes – Gimnasio Fuerza Total</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+    *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth;}
+    body{font-family:'Poppins',sans-serif;background:#ffe6f0;color:#330033;line-height:1.7;}
+    img{max-width:100%;display:block;border-radius:12px;}
+    header{background:#5a0073;color:#fff;padding:3rem 2rem;display:flex;flex-wrap:wrap;gap:2rem;align-items:center;justify-content:space-between;}
+    header .brand{font-size:2.4rem;font-weight:800;}
+    header .tagline{font-size:1.2rem;max-width:450px;}
+    header span.highlight{color:#ff99cc;}
+    nav{background:#990099;padding:1rem;display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;}
+    nav a{color:#fff;text-decoration:none;font-weight:600;padding:.5rem 1.2rem;border-radius:6px;transition:background .3s;}
+    nav a:hover{background:rgba(255,255,255,.15);}
+    section{padding:3.5rem 1.5rem;max-width:1100px;margin:auto;}
+    h2.section-title{font-size:2rem;color:#cc0066;margin-bottom:1rem;position:relative;}
+    h2.section-title::after{content:'';position:absolute;bottom:-6px;left:0;width:60px;height:4px;background:#ff99cc;border-radius:2px;}
+    .grid{display:grid;gap:1.8rem;}
+    .grid-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+    .card{background:#fff;box-shadow:0 4px 10px rgba(0,0,0,.08);padding:1.5rem;border-radius:12px;}
+    table{width:100%;border-collapse:collapse;margin-top:1rem;background:#fff;box-shadow:0 4px 10px rgba(0,0,0,.05);}
+    th,td{padding:1rem;text-align:center;border:1px solid #e6cce6;}
+    th{background:#ffccf2;color:#330033;}
+    tr:nth-child(even){background:#fff6fa;}
+    footer{background:#5a0073;color:#eee;text-align:center;padding:2rem 1rem;margin-top:3rem;font-size:.9rem;}
+    @media(max-width:768px){header{flex-direction:column;text-align:center;}header .hero-img{order:-1;}}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 class="brand">Fuerza <span class="highlight">Total</span></h1>
+      <p class="tagline">Elige el plan que impulse tu progreso.</p>
+    </div>
+    <div class="hero-img"><img src="assets/planes-hero.png" alt="Persona eligiendo plan"></div>
+  </header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="vision.html">Visión y Misión</a>
+    <a href="planes.html">Planes</a>
+    <a href="formulario.html">Formulario</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+
+  <section>
+    <h2 class="section-title">Nuestros Planes</h2>
+    <table>
+      <thead><tr><th>Plan</th><th>Características</th><th>Entrenador Responsable</th><th>Precio Mensual (S/)</th></tr></thead>
+      <tbody>
+        <tr><td>STARTER</td><td>Acceso libre a sala de máquinas y cardio + Evaluación inicial.</td><td>Coach Andrea López</td><td>120</td></tr>
+        <tr><td>PROGRESS</td><td>Todas las ventajas de STARTER + 3 clases dirigidas semanales + Plan nutricional.</td><td>Coach Marco Reyes</td><td>200</td></tr>
+        <tr><td>ELITE</td><td>Incluye PROGRESS + Entrenamiento personal ilimitado + Acceso spa y crioterapia.</td><td>Coach Daniela Mendoza</td><td>380</td></tr>
+      </tbody>
+    </table>
+
+    <div class="grid grid-2" style="margin-top:1.5rem;">
+      <figure class="card"><img src="RECURSOS/CINTA.jpg" alt="Usuario en cinta de correr"><figcaption>Plan Starter: ideal para comenzar</figcaption></figure>
+      <figure class="card"><img src="RECURSOS/MASAJES.jpg" alt="Masaje de recuperación"><figcaption>Elite: máximo rendimiento y bienestar</figcaption></figure>
+    </div>
+  </section>
+
+  <footer>
+    <p>INTEGRANTES:<p>
+    <p>Palomino Barrios, Luz Mery</p> 
+    <p>Galvez Zuñiga, Sofia Nicoll</p>
+    <p>&copy; 2025 Gimnasio Fuerza Total</p>
+  </footer>
+</body>
+</html>
